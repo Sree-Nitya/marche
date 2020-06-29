@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 @Entity(name = "seller")
 @Setter @Getter
-public class SellerDTO extends AccountInfoDTO {
+public class SellerDTO{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

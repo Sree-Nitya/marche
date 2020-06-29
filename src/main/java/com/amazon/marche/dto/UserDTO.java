@@ -10,10 +10,12 @@ import javax.persistence.Id;
 
 @Entity(name = "user")
 @Getter @Setter
-public class UserDTO extends AccountInfoDTO {
+public class UserDTO{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private boolean valid;
-
+    private String username;
+    private String password;
+    private boolean enabled;
+    private String roles;
 }

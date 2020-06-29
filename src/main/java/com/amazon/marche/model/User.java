@@ -6,8 +6,12 @@ import lombok.Setter;
 import javax.persistence.Id;
 
 @Getter @Setter
-public class User extends AccountInfo{
+public class User{
 
     private int id;
-    private boolean valid;
+    private String username;
+    private String password;
+    private String email;
+    private boolean enabled;
+    private String roles;
 }
